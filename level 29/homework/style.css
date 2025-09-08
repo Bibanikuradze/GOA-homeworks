@@ -1,0 +1,61 @@
+/* 3) 5 p id-ით სხვადასხვა ფერებით */
+#para1 {
+    color: red;
+}
+
+#para2 {
+    color: green;
+}
+
+#para3 {
+    color: blue;
+}
+
+#para4 {
+    color: orange;
+}
+
+#para5 {
+    color: purple;
+}
+
+/* 4) 5 button class-ით შავი ფონის */
+.black-bg {
+    background-color: black;
+    color: white;
+}
+
+/* 6) button id და class-იs გამოყენებით */
+#btn1 {
+    color: blue;
+}
+
+.btn-class {
+    color: rgb(0, 148, 0);
+}
+
+/* 8) 5 div ბლოკი, rgb ფერი */
+#div1 {
+    background-color: rgb(255, 0, 0); /* წითელი */
+    color: rgb(255, 255, 255);
+}
+
+#div2 {
+    background-color: rgb(0, 255, 0); /* მწვანე */
+    color: rgb(0, 0, 0);
+}
+
+#div3 {
+    background-color: rgb(0, 0, 255); /* ლურჯი */
+    color: rgb(255, 255, 0);
+}
+
+#div4 {
+    background-color: rgb(255, 255, 0); /* ყვითელი */
+    color: rgb(0, 0, 255);
+}
+
+#div5 {
+    background-color: rgb(255, 166, 0); /* ნარინჯისფერი */
+    color: rgb(255, 255, 255);
+}

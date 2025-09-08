@@ -1,0 +1,23 @@
+thead{
+    background-color: rgb(255, 0, 0)
+}
+table{
+    border-collapse: collapse;
+    width: 50%;
+    height: 50%;
+    border-left:none;
+    font-size: 10px;
+}
+.one{
+    color:aqua;
+    background-color: gray
+}
+td,th{
+    text-align: center;
+}
+th{
+    background-color:rgb(255, 0, 0) ;
+}
+tr{
+    border-right:none
+}

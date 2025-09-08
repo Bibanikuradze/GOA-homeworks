@@ -1,0 +1,51 @@
+/* 3) CSS: Selectors, Declarations, Properties, Values */
+/* 
+- CSS Selector: p, h1, button
+- Property: color, background-color
+- Value: red, green, yellow
+- Rule: selector + declaration (property: value)
+*/
+
+/* N4 */
+.parent {
+    color: rgb(0, 255, 0); /* div gets green text color */
+}
+
+.override {
+    color: rgb(255, 0, 0); /* color for specific p element */
+}
+
+/* N5 */
+p, h1, button {
+    font-family: Arial, sans-serif;
+    color: rgb(0, 0, 255); /* blue color for p, h1, and button */
+}
+
+button {
+    background-color: rgb(255, 255, 0);
+    border: 2px solid rgb(0, 0, 0);
+}
+/* N6 */
+body {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+header {
+    background-color: rgb(0, 255, 8);
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.content {
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+footer {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin-top: 20px;
+}

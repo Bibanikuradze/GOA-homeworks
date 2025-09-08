@@ -1,0 +1,110 @@
+/* 2) Underline Text */
+p {
+    text-decoration: underline;
+  }
+  
+  /* 3) Remove Underline from Anchor Tags */
+  a {
+    text-decoration: none;
+  }
+  
+  /* 4) Overline Text for <h1> */
+  h1 {
+    text-decoration: overline;
+  }
+  
+  /* 5) Line Through Text for <span> */
+  span {
+    text-decoration: line-through;
+  }
+  
+  /* 6) Combined Decorations (Underline and Overline) for <h2> */
+  h2 {
+    text-decoration: underline overline;
+  }
+  
+  /* 7) Dashed Underline for Anchor Tags */
+  a {
+    text-decoration: underline dashed;
+  }
+  
+  /* 8) Wavy Underline for Warning Paragraph */
+  p.warning {
+    text-decoration: underline wavy red;
+  }
+  
+  /* 9) Uppercase for Navigation Links */
+  nav a {
+    text-transform: uppercase;
+  }
+  
+  /* 10) Basic Shadow for Headings */
+  h1, h2, h3 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 11) Bold Shadow for Headings */
+  h1, h2, h3 {
+    text-shadow: 4px 4px 6px black;
+  }
+  
+  /* 12) Blurred Shadow for Paragraph Text */
+  p {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* 13) Colored Shadow (Red) for <h1> */
+  h1 {
+    text-shadow: 3px 3px 5px red;
+  }
+  
+  /* 14) Import and Apply Roboto Font for Paragraph Text */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  
+  p {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* 15) Multiple Font Imports: Roboto for Headings, Open Sans for Body */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+  
+  h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  p {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  /* 16) Font Pairing Showcase: Playfair Display for Headings, Roboto for Body */
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+  
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  p {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* 17) Download and Apply a Custom Font for Headings */
+  @font-face {
+    font-family: 'CustomFont';
+    src: url('path-to-font/font-name.ttf') format('truetype');
+  }
+  
+  h1, h2, h3 {
+    font-family: 'CustomFont', sans-serif;
+  }
+  
+  /* 18) Apply Custom Font for Button Text */
+  @font-face {
+    font-family: 'ButtonFont';
+    src: url('path-to-font/button-font.woff2') format('woff2');
+  }
+  
+  button {
+    font-family: 'ButtonFont', sans-serif;
+  }
+  

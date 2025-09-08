@@ -1,0 +1,101 @@
+<!-- თქვენი სიტყვებით ახსენით როგორ მუშაობს შემდეგი ატრიბუტები: type, name, value, required, placeholder, id, for -->
+<!-- type არის უბრალოდ input-ის ტიპი-->
+<!-- name სახელი რომელიც ინახება data-ში-->
+<!-- value მნიშვნელობა-->
+<!-- required აუცილებელია რომ შესრულდეს მოქმედება რათა გაგრძელდეს კოდის მუშაობა-->
+<!-- placeholder არის text box-ში მითითებული ინფორმაცია თუ რა უნდა ჩავწეროთ-->
+<!-- id სანავიგაციო თეგი-->
+<!-- for ატრიბუტი რომელიც აკავშირებს label-ს input-თან-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- შექმენით 10 ინფუთი და შემდეგ თითოეულს შეუქმენით label, მოახდინეთ მათი დაკავშირებაც -->
+    <label for="num1">num1:</label>
+    <input type="text" id="num1" required placeholder="num1">
+    <br><br>
+    <label for="num2">num2:</label>
+    <input type="text" id="num2" required placeholder="num2">
+    <br><br>
+    <label for="num3">num3:</label>
+    <input type="text" id="num3" required placeholder="num3">
+    <br><br>
+    <label for="num4">num4:</label>
+    <input type="text" id="num4" required placeholder="num4">
+    <br><br>
+    <label for="num5">num5:</label>
+    <input type="text" id="num5" required placeholder="num5">
+    <br><br>
+    <label for="num6">num6:</label>
+    <input type="text" id="num6" required placeholder="num6">
+    <br><br>
+    <label for="num7">num7:</label>
+    <input type="text" id="num7" required placeholder="num7">
+    <br><br>
+    <label for="num8">num8:</label>
+    <input type="text" id="num8" required placeholder="num8">
+    <br><br>
+    <label for="num9">num9:</label>
+    <input type="text" id="num9" required placeholder="num9">
+    <br><br>
+    <label for="num10">num10:</label>
+    <input type="text" id="num10" required placeholder="num10">
+
+
+    <!-- თქვენი სიტყვებით ახსენით რატომ არის კარგი ინფუთების და ლეიბელების დაკავშირება და აღნიშნეთ hit area-ს გაზრდა რას ნიშნავს -->
+    <!-- გვაძლევს შესაძლებლობას text-ზე დაკლიკებით დავწეროთ ტექსტი იმ ფანჯარაში რომელსაც ეკუთვნის ტექსტი-->
+    <!-- hit area არის label-ში მიცემული ტექსტი -->
+
+
+    <!-- შექმენით ფორმა, სადაც იქნება 5 ინფუთი. თითეოულ ინფუთს გაუწერეთ name და value ატრიბუტები.
+    ფორმის ბოლოს აიღეთ დადასტურების ღილაკი -->
+    <br><br><hr><br>
+    <form>
+        <label for="number">number:</label>
+        <input type="text" id="number" required name="number" value="number">
+        <br><br>
+        <label for="number1">number1:</label>
+        <input type="text" id="number1" required name="number1" value="number1">
+        <br><br>
+        <label for="number2">number2:</label>
+        <input type="text" id="number2" required name="number2" value="number2">
+        <br><br>
+        <label for="number3">number3:</label>
+        <input type="text" id="number3" required name="number3" value="number3">
+        <br><br>
+        <label for="number4">number4:</label>
+        <input type="text" id="number4" required name="number4" value="number4">
+        <br><br>
+        <input type="submit">
+    </form>
+
+    <br><br><hr><br>
+
+    <form>
+        <h1>HTML from</h1>
+        <label for="first_name">first name</label>
+        <input type="text" id="first_name" required>
+        <br><br>
+        <label for="last_name">last name</label>
+        <input type="text" id="last_name" required>
+        <br><br>
+        <label for="E-mail">E-mail</label>
+        <input type="text" id="E-mail" required>
+        <br><br>
+        <label>gender:</label>
+        <br><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="male">Female</label>
+        <br><br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>

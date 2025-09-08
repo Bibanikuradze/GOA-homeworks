@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- შექმენით dropdown menu რომელსაც ექნება 20 option, თითოეულ option-ს გაუწერეთ value ატრიბუტი და მენიუს გაუწერეთ name ატრიბუტი. მენიუ დააკავშირეთ label-თან -->
+    <label for="select">cars</label>
+    <select id="select">
+        <option value="toyota">toyota</option>
+        <option value="ford">ford</option>
+        <option value="chevrolet">chevrolet</option>
+        <option value="honda">honda</option>
+        <option value="nissan">nissan</option>
+        <option value="jeep">jeep</option>
+        <option value="hyundai">hyundai</option>
+        <option value="kia">kia</option>
+        <option value="ram trucks">ram trucks</option>
+        <option value="subaru">subaru</option>
+        <option value="GMC">GMC</option>
+        <option value="volkswagen">volkswagen</option>
+        <option value="BMW">BMW</option>
+        <option value="mazda">mazda</option>
+        <option value="mercedes-benz">mercedes-benz</option>
+        <option value="lexus">lexus</option>
+        <option value="tesla">tesla</option>
+        <option value="dodge">dodge</option>
+        <option value="audi">audi</option>
+        <option value="acura">acura</option>
+        <option value="mitsubishi">mitsubishi</option>
+        <input type="submit">
+    </select>
+    <br><br>
+    <!-- video თეგში აიღეთ ერთი და იგივე ვიდეო 3 განსხვავებული ფორმატით და ბოლოში გაუწერეთ სათადარიგო ტექსტიც. -->
+    <video controls width="40%">
+        <source src="./video/countdown.mp4" type="video/mp4">
+        <source src="./video/countdown.avi" type="video/avi">
+        <source src="./video/countdown.ogv" type="video/ogg">
+    </video>
+
+    <!-- ვებსაიტზე ჩანერგეთ 5 ვიდეო iframe-ების გამოყენებით -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bqiK9XxI788?si=W47H4rhhbm-oLOub" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2Y8sjVvxuVE?si=roO8VJ01wj2EHqzZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GXc3jbyiKCM?si=JHdXCmAC2gcx3KYU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gAl06ABKFNc?si=x5a3bzBz_0IDWmuH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WiFaMCbInHM?si=BK9mb2A8todnG5FR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br><br><br><br>
+    <!-- თქვენი სიტყვებით ახსენით როგორი მიდგომები გვაქვს ვიდეოს ვებსაიტზე ჩასანერგად, გააკეთეთ ნახაზი ამ საკითხზე -->
+    <!-- back up (სათადარიგო) იყენებთ ვიდეოებისთვის რათა გამოჩნდეს ვიდეო ვებსაიტზე რადგან
+    ზოგიერთი ბრაუზერი არ ასაპორტებს ამათუიმ ვიდეო ფაილს -->
+
+    <form>
+        <label for="firstname">first name:</label>
+        <input type="text" id="firstname" required>
+        <label for="lastname">last name:</label>
+        <input type="text" id="lastname" required>
+        <br><br>
+        <label for="date">date of birth:</label>
+        <input type="date" id="date" required>
+        <label for="age">age:</label>
+        <input type="number" id="age" required>
+        <br><br>
+        <label for="gender">gender:</label>
+        <select id="gender" required>
+            <option value="male">male</option>
+            <option value="female">female</option>
+        </select>
+        <label for="E-mail">E-mail</label>
+        <input type="email" id="E-mail" placeholder="enter email address" required>
+        <br><br>
+        <label for="positions">position available:</label>
+        <input type="radio" id="junior" required>
+        <label for="junior">junior</label>
+        <input type="radio" id="mid-lvl" required>
+        <label for="mid-lvl">mid-level</label>
+        <input type="radio" id="senior" required>
+        <label for="senior">senior</label>
+        <br><br>
+        <label>programming language</label>
+        <input type="checkbox" id="java">
+        <label for="java">java</label>
+        <input type="checkbox" id="javascript">
+        <label for="javascript">javascript</label>
+        <input type="checkbox" id="python">
+        <label for="python">python</label>
+        <br><br>
+        <label for="password">password</label>
+        <input type="password" id="password">
+        <label for="confirm_password">confirm password</label>
+        <input type="password" id="confirm_password">
+        <br><br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+    <br><br><br><br>
+    <nav>
+        <label for="categpries">categpries</label>
+        <select id="categpries">
+            <option value="category1">category 1</option>
+            <option value="category2">category 2</option>
+        </select>
+        <label for="services">services</label>
+        <select id="services">
+        <option value="service one">service one</option>
+        <option value="service two">service two</option>
+        <option value="service three">service three</option>
+        <option value="service four">service four</option>
+        <option value="service five">service five</option>
+        <option value="service six">service six</option>
+    </select>
+    <a href="#">contact us</a>
+    </nav>
+</body>
+</html>

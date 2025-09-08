@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>document</title>
+</head>
+<body>
+    <button id="button-main">hello</button>
+
+    <script>
+        const myButton = document.getElementById("button-main");
+
+        myButton.textContent = "hello world!";
+    </script>
+
+
+
+    
+    <h1 id="h1-1">hello</h1>
+
+    <script>
+        const title = document.getElementById('h1-1');
+
+        title.style.color = 'white';
+        title.style.backgroundColor = 'darkblue';
+        title.style.fontWeight = 'bold';
+        title.style.fontSize = '36px';
+        title.style.borderRadius = '10px';
+    </script>
+
+
+
+    <button id="button-main">click me</button>
+    <p id="p-main">hello world</p>
+
+    <script>
+        const button = document.getElementById('button-main');
+        const paragraph = document.getElementById('p-main');
+
+        button.style.backgroundColor = 'green';
+        button.style.color = 'white';
+
+        paragraph.style.fontSize = '20px';
+        paragraph.textContent = 'ტექსტი შეიცვალა JavaScript-ით!';
+    </script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+body {
+    font-family: sans-serif;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.move-box {
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    position: relative;
+    animation: moveRight 2s linear forwards;
+}
+@keyframes moveRight {
+    from { left: 0; }
+    to { left: 300px; }
+}
+
+.color-box {
+    width: 200px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: bgColorChange 5s forwards;
+}
+@keyframes bgColorChange {
+    to { background-color: red; }
+}
+
+.rotate-box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate360 2s linear infinite;
+}
+@keyframes rotate360 {
+    to { transform: rotate(360deg); }
+}
+
+.pulse-box {
+    width: 100px;
+    height: 100px;
+    background: pink;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+.bounce-ball {
+    width: 50px;
+    height: 50px;
+    background: orange;
+    border-radius: 50%;
+    position: relative;
+    animation: bounce 1s ease-in-out 3;
+}
+@keyframes bounce {
+    0%, 100% { top: 0; }
+    50% { top: -80px; }
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid lightgray;
+    border-top: 4px solid blue;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.run-once {
+    width: 150px;
+    height: 50px;
+    background: #ccc;
+    animation: fadeOnce 2s forwards;
+}
+@keyframes fadeOnce {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.toggle-box {
+    width: 100px;
+    height: 100px;
+    background: purple;
+}
+.looping {
+    animation: loopAnim 2s infinite;
+}
+@keyframes loopAnim {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.4); }
+}
+
+.delayed-box {
+    width: 200px;
+    height: 50px;
+    background: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideRight 3s ease 2s forwards;
+}
+@keyframes slideRight {
+    from { transform: translateX(0); }
+    to { transform: translateX(200px); }
+}
+
+.sequence-container {
+    display: flex;
+    gap: 10px;
+}
+.seq-box {
+    width: 50px;
+    height: 50px;
+    background: #444;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: scaleUp 1s forwards;
+}
+.delay1 { animation-delay: 0s; }
+.delay2 { animation-delay: 1s; }
+.delay3 { animation-delay: 2s; }
+@keyframes scaleUp {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+.fade-box {
+    width: 200px;
+    height: 50px;
+    background: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeOut 10s forwards;
+}
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px;
+    gap: 10px;
+}
+.grid-item {
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.b {
+    grid-area: 1 / 2 / 3 / 3;
+}
+.c {
+    grid-area: 2 / 1 / 3 / 2;
+}

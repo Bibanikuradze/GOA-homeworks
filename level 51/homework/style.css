@@ -1,0 +1,26 @@
+body {
+    background: #ffffff;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+  
+  .ball {
+    width: 60px;
+    height: 60px;
+    background-color: #3498db;
+    border-radius: 50%;
+    position: relative;
+    animation: arcBounce 2s infinite;
+  }
+  
+  @keyframes arcBounce {
+    0%   { transform: translateX(0) translateY(0); }
+    25%  { transform: translateX(100px) translateY(-150px); }
+    50%  { transform: translateX(200px) translateY(0); }
+    75%  { transform: translateX(300px) translateY(-150px); }
+    100% { transform: translateX(400px) translateY(0); }
+  }

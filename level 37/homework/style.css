@@ -1,0 +1,24 @@
+thead{
+    background-color: aqua
+}
+table{
+    border-collapse: collapse;
+    border-bottom: 2px solid aqua;
+    width: 50%;
+    height: 50%;
+    border-left:none;
+    font-size: 10px;
+}
+.one{
+    color:aqua;
+    background-color: gray
+}
+td,th{
+    text-align: center;
+}
+th{
+    background-color:aqua ;
+}
+tr{
+    border-right:none
+}

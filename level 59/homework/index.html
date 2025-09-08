@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="showAge()">click me</button>
+
+    <script>
+      function showAge() {
+        alert("ჩემი ასაკია 23 წელი");
+      }
+    </script>
+    <img
+      id="myImage"
+      src="image1.jpg"
+      alt="სურათი"
+      width="300"
+      onclick="changeImage()" />
+
+    <script>
+      function changeImage() {
+        document.getElementById("myImage").src = "image2.jpg";
+      }
+    </script>
+</body>
+</html>

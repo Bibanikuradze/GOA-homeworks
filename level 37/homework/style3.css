@@ -1,0 +1,31 @@
+.custom-list {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-list li {
+    padding: 10px;
+    font-size: 18px;
+    position: relative;
+}
+
+
+.custom-list li::before {
+    content: "⭐"; 
+    position: absolute;
+    left: -25px;
+}
+
+
+.custom-list li:nth-child(even) {
+    background-color: #f0f0f0; 
+}
+
+
+.custom-list li:nth-child(3n) {
+    color: red;
+}
+
+.custom-list li:first-child, .custom-list li:last-child {
+    font-weight: bold;
+}

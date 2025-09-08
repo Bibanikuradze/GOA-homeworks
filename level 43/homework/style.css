@@ -1,0 +1,177 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b2b37;
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+.nav-links a:hover,
+.nav-links a.jambuli {
+    color: orangered;
+}
+
+
+
+
+
+
+body {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 35px;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.item1 {
+    background-color: rgb(130, 207, 237);
+}
+
+.item2 {
+    background-color:rgb(142, 238, 142);
+}
+
+.item3 {
+    background-color: rgb(189, 73, 73);
+}
+
+.item4 {
+    background-color: rgb(236, 169, 45);
+}
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding:0;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header, .footer {
+    background-color: red;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.footer {
+    background-color: rgb(210, 16, 81);
+}
+
+.content {
+    display: flex;
+    flex: 1;
+}
+
+.left-sidebar, .right-sidebar {
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-sidebar {
+    background-color:skyblue;
+}
+
+.right-sidebar {
+    background-color: green;
+}
+
+.main-content {
+    flex: 1;
+    background-color: blue;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    width: 300px;
+    border: 2px solid black;
+}
+.section {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.header { 
+    background: blue; 
+}
+.hero { 
+    background: red; 
+}
+.content {
+     background: green; 
+    }
+.sidebar {
+     background: purple; 
+    }
+.footer {
+     background: gray; 
+    }

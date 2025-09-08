@@ -1,0 +1,83 @@
+body {
+    background: linear-gradient(to right, #4b004b, #7b2b7b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.box {
+    border-radius: 10px;
+}
+
+.green {
+    background-color: rgb(54, 179, 141);
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.cyan {
+    background-color: rgb(79, 208, 222);
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 1;
+}
+
+.pink {
+    background-color: rgb(220, 124, 207);
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+}
+
+.orange {
+    background-color: rgb(189, 107, 66);
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 2;
+}
+
+.dark-green {
+    background-color: rgb(48, 92, 76);
+    grid-column: 4 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.olive {
+    background-color: rgb(107, 108, 84);
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 1;
+}
+
+
+
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .child {
+    flex: 1;
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+  }
+
+  @media (max-width: 800px) {
+    .parent {
+      flex-direction: column;
+    }
+  }  

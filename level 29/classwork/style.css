@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(240, 240, 240);
+}
+
+#main-header {
+    background-color: rgb(76, 175, 80);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header {
+    font-size: 36px;
+}
+
+.content {
+    padding: 20px;
+    font-size: 18px;
+    color: rgb(51, 51, 51);
+}
+
+.footer {
+    background-color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+
+
+
+#p1 {
+    color: rgb(255, 255, 255); /* თეთრი */
+}
+
+#p2 {
+    color: rgb(0, 0, 0); /* შავი */
+}
+
+#p3 {
+    color: rgb(255, 0, 0); /* წითელი */
+}
+
+#p4 {
+    color: rgb(0, 128, 0); /* მწვანე */
+}
+
+#p5 {
+    color: rgb(0, 0, 255); /* ლურჯი */
+}
+
+#p6 {
+    color: rgb(255, 255, 0); /* ყვითელი */
+}
+
+#p7 {
+    color: rgb(135, 206, 235); /* ცისფერი */
+}
+
+#p8 {
+    color: rgb(238, 130, 238); /* იასამნისფერი */
+}
+
+
+
+
+#pa1 {
+    color: rgb(105, 31, 31); /* თეთრი */
+}
+
+#pa2 {
+    color: rgb(147, 67, 67); /* შავი */
+}
+
+#pa3 {
+    color: rgb(198, 142, 142); /* წითელი */
+}
+
+#pa4 {
+    color: rgb(8, 17, 8); /* მწვანე */
+}
+
+#pa5 {
+    color: rgb(57, 57, 214); /* ლურჯი */
+}

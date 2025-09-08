@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f4f4f4;
+    gap: 30px;
+  }
+
+  .hover-btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hover-btn:hover {
+    background-color: #007BFF;
+    color: white;
+  }
+
+  .transition-link {
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .transition-link:hover {
+    color: #FF6347;
+  }
+
+  .scale-img {
+    width: 200px;
+    transition: transform 0.3s ease;
+  }
+  
+  .scale-img:hover {
+    transform: scale(1.1);
+  }
+
+  .text-hover {
+    font-size: 22px;
+    transition: color 0.3s ease;
+  }
+  
+  .text-hover:hover {
+    color: #FF4500;
+  }
+
+  .border-box {
+    padding: 20px;
+    border: 2px solid #333;
+    transition: border-width 0.3s ease;
+  }
+  
+  .border-box:hover {
+    border-width: 5px;
+    border-color: #FF6347;
+  }
+
+  .press-btn {
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+  }
+  
+  .press-btn:active {
+    transform: scale(0.95);
+  }
+
+  .opacity-div {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    transition: opacity 0.3s ease;
+  }
+  
+  .opacity-div:hover {
+    opacity: 0.5;
+  }
+
+  .padding-box {
+    padding: 20px;
+    background-color: #FFD700;
+    transition: padding 0.3s ease;
+  }
+  
+  .padding-box:hover {
+    padding: 40px;
+  }
+
+  .rotation-icon {
+    font-size: 50px;
+    transition: transform 0.3s ease;
+  }
+  
+  .rotation-icon:hover {
+    transform: rotate(15deg);
+  }
+
+  .shadow-card {
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .shadow-card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }  

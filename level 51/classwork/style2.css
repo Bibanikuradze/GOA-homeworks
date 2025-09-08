@@ -1,0 +1,17 @@
+.hover-block {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(52, 152, 219);
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.hover-block:hover {
+    background-color: rgb(231, 76, 60);
+}

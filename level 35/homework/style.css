@@ -1,0 +1,42 @@
+a {
+    color: rgb(0, 102, 204);
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(255, 102, 0);
+    background-color: rgb(240, 240, 240);
+}
+
+a:visited {
+    color: rgb(128, 0, 128);
+}
+
+table {
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 8px;
+    text-align: center;
+}
+
+thead {
+    background-color: rgb(76, 175, 80);
+    color: rgb(255, 255, 255);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(242, 242, 242);
+}
+
+tbody tr:hover {
+    background-color: rgb(221, 221, 221);
+}
