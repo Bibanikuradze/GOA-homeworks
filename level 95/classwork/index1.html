@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Operations</title>
+</head>
+<body>
+    <div class="container">
+        <h1>String Operations Demo</h1>
+        
+        <div class="result">
+            <h3>Task 1: Finding "a" in "banana"</h3>
+            <div class="code">String: "banana"</div>
+            <p><strong>First occurrence of "a":</strong> <span id="firstA"></span></p>
+            <p><strong>Second occurrence of "a":</strong> <span id="secondA"></span></p>
+            <button onclick="findOccurrences()">Find Occurrences</button>
+        </div>
+
+        <div class="result">
+            <h3>Task 2: Checking "world" in "Hello world"</h3>
+            <div class="code">String: "Hello world"</div>
+            <div class="code">Substring: "world"</div>
+            <p><strong>Result:</strong> <span id="worldCheck"></span></p>
+            <button onclick="checkWorld()">Check Substring</button>
+        </div>
+
+        <div class="result">
+            <h3>All Results at Once</h3>
+            <button onclick="runAll()">Run All Operations</button>
+            <div id="allResults"></div>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

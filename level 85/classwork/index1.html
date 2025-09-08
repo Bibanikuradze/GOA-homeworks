@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კლასური დავალება - ფუნქციები</title>
+</head>
+<body>
+    <h1>კლასური დავალება - ფუნქციების შედგენა</h1>
+    
+    <div>
+        <h2>დავალება:</h2>
+        <p>შეადგინეთ კონსტანტა და მასში შეინახეთ function keyword-ით შედგენილი ფუნქცია. ეს ფუნქცია უბრალოდ უნდა ბეჭდავდეს hello-ს. ზუსტად იგივე გააკეთეთ arrow ფუნქციაზე.</p>
+        <p>კომენტარით დაწერეთ რომელი ფუნქცია იქნება მაგ ორიდან ანონიმური.</p>
+    </div>
+
+    <div>
+        <h2>შედეგი:</h2>
+        <p>შეამოწმეთ კონსოლს (F12) შედეგების სანახავად</p>
+    </div>
+
+    <script>
+        // კლასური დავალება - ფუნქციების შედგენა
+
+        // 1. function keyword-ით შედგენილი ფუნქცია კონსტანტაში
+        const regularFunction = function() {
+            console.log("hello");
+        };
+
+        // 2. arrow ფუნქცია კონსტანტაში
+        const arrowFunction = () => {
+            console.log("hello");
+        };
+
+        // ფუნქციების გამოძახება
+        console.log("=== Regular function ===");
+        regularFunction();
+
+        console.log("=== Arrow function ===");
+        arrowFunction();
+
+        // კომენტარი: ორივე ფუნქცია არის ანონიმური
+        // რადგან ორივეს არ აქვს სახელი, მხოლოდ კონსტანტებშია შენახული
+        // function keyword-ით შედგენილი ფუნქცია არის function expression
+        // arrow ფუნქცია არის arrow function expression
+        // ორივე ანონიმურია, რადგან არ აქვთ სახელი
+    </script>
+</body>
+</html> 

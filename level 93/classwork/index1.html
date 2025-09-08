@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decimal Number Conversion and Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border-left: 4px solid #28a745;
+        }
+        .console {
+            background-color: #1e1e1e;
+            color: #00ff00;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin-top: 20px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .comparison {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff3cd;
+            border-radius: 5px;
+            border-left: 4px solid #ffc107;
+        }
+        .highlight {
+            background-color: #e7f3ff;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Decimal Number Conversion and Comparison</h1>
+        <p>Click the button below to enter two decimal numbers as strings and compare their conversions.</p>
+        
+        <button onclick="processNumbers()">Enter Decimal Numbers</button>
+        
+        <div class="result">
+            <h3>Results:</h3>
+            <div id="results"></div>
+        </div>
+        
+        <div class="comparison">
+            <h3>Comparison:</h3>
+            <div id="comparison"></div>
+        </div>
+        
+        <div class="console">
+            <h4>Console Output:</h4>
+            <div id="console"></div>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

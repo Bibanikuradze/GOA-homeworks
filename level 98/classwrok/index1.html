@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Index Display</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Array Index Display</h1>
+        <p style="text-align: center; color: #666; margin-bottom: 30px;">
+            Print each element of 5 Numbers array along with its index: "Index: X, Value: Y"
+        </p>
+        
+        <div class="result">
+            <h3>Task: Display Array Elements with Index</h3>
+            <p>Given an array of 5 numbers, print each element with its index.</p>
+            <button onclick="displayArrayWithIndex()">Display Array Elements</button>
+            <button onclick="displayWithDifferentMethods()">Show Different Methods</button>
+            <div id="arrayResult"></div>
+        </div>
+
+        <div class="result">
+            <h3>Custom Array</h3>
+            <p>Enter 5 numbers separated by commas:</p>
+            <input type="text" id="customArray" placeholder="1, 2, 3, 4, 5" style="width: 200px; padding: 8px; margin: 10px;">
+            <br>
+            <button onclick="displayCustomArray()">Display Custom Array</button>
+            <div id="customResult"></div>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

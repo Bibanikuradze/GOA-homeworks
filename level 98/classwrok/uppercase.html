@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Uppercase Conversion</title>
+</head>
+<body>
+    <div class="container">
+        <h1>String Uppercase Conversion</h1>
+        <p style="text-align: center; color: #666; margin-bottom: 30px; padding: 0 30px;">
+            Convert all strings in an array to uppercase using different JavaScript methods
+        </p>
+        
+        <div class="result">
+            <h3>Predefined String Array Conversion</h3>
+            <p>Demonstrates 4 different methods to convert strings to uppercase:</p>
+            <button onclick="showUppercaseConversion()">Show Uppercase Conversion Methods</button>
+            <div id="uppercaseResult"></div>
+        </div>
+
+        <div class="result">
+            <h3>Custom String Array to Uppercase</h3>
+            <p>Enter strings separated by commas to convert to uppercase:</p>
+            <input type="text" id="customStringArray" placeholder="hello, world, javascript, programming, array">
+            <br>
+            <button onclick="convertCustomStringsToUppercase()">Convert Custom Strings</button>
+            <div id="customStringResult"></div>
+        </div>
+
+        <div class="result">
+            <h3>Interactive Examples</h3>
+            <p>Try different string arrays and see the conversion results:</p>
+            <button onclick="showExample1()">Example 1: Programming Languages</button>
+            <button onclick="showExample2()">Example 2: Countries</button>
+            <button onclick="showExample3()">Example 3: Colors</button>
+            <div id="exampleResult"></div>
+        </div>
+    </div>
+
+    <script src="uppercase.js"></script>
+</body>
+</html>

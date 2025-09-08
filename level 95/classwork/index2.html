@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Slicing Examples</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .example {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #4CAF50;
+        }
+        
+        .example h3 {
+            margin-top: 0;
+            color: #4CAF50;
+            font-size: 1.3em;
+        }
+        
+        .code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 10px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .result {
+            background: rgba(76, 175, 80, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+            border: 1px solid rgba(76, 175, 80, 0.5);
+        }
+        
+        .btn {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .input-group {
+            margin: 15px 0;
+        }
+        
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 16px;
+        }
+        
+        .input-group input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .input-group input:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔤 String Slicing Examples</h1>
+        
+        <div class="example">
+            <h3>1. Extract "world" from "Hello world"</h3>
+            <div class="code">
+                let text = "Hello world";<br>
+                let result = text.slice(6); // "world"
+            </div>
+            <button class="btn" onclick="extractWorld()">Run Example</button>
+            <div id="result1" class="result" style="display: none;"></div>
+        </div>
+        
+        <div class="example">
+            <h3>2. Get first 5 characters from "JavaScript is fun"</h3>
+            <div class="code">
+                let text = "JavaScript is fun";<br>
+                let result = text.slice(0, 5); // "JavaS"
+            </div>
+            <button class="btn" onclick="getFirstFive()">Run Example</button>
+            <div id="result2" class="result" style="display: none;"></div>
+        </div>
+        
+        <div class="example">
+            <h3>3. Remove first character from "Python"</h3>
+            <div class="code">
+                let text = "Python";<br>
+                let result = text.slice(1); // "ython"
+            </div>
+            <button class="btn" onclick="removeFirst()">Run Example</button>
+            <div id="result3" class="result" style="display: none;"></div>
+        </div>
+        
+        <div class="example">
+            <h3>4. Interactive String Slicing</h3>
+            <div class="input-group">
+                <label for="customText">Enter your text:</label>
+                <input type="text" id="customText" placeholder="Enter any text here..." value="Hello World">
+            </div>
+            <div class="input-group">
+                <label for="startIndex">Start index:</label>
+                <input type="number" id="startIndex" placeholder="0" value="0">
+            </div>
+            <div class="input-group">
+                <label for="endIndex">End index (optional):</label>
+                <input type="number" id="endIndex" placeholder="Leave empty for end of string">
+            </div>
+            <button class="btn" onclick="customSlice()">Slice String</button>
+            <div id="customResult" class="result" style="display: none;"></div>
+        </div>
+        
+        <div class="example">
+            <h3>5. All Examples at Once</h3>
+            <button class="btn" onclick="runAllExamples()">Run All Examples</button>
+            <div id="allResults" class="result" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

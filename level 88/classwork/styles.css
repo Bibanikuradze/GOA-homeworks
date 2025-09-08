@@ -1,0 +1,133 @@
+/* Reset & Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f7fd;
+      color: #3a184d;
+    }
+    
+    /* Container */
+    .testimonial-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+    
+    /* Top Content Layout */
+    .top-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 60px;
+    }
+    
+    .left-text {
+      flex: 1 1 500px;
+    }
+    
+    .left-text h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+    
+    .left-text p {
+      font-size: 1rem;
+      color: #6f5c76;
+      max-width: 500px;
+    }
+    
+    /* Ratings */
+    .right-ratings {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+      flex: 1 1 300px;
+    }
+    
+    .rating-box {
+      background-color: #f1ebf9;
+      padding: 15px 20px;
+      border-radius: 12px;
+      font-weight: bold;
+      color: #3a184d;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .stars {
+      color: #ff9529;
+    }
+    
+    /* Cards */
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    
+    .card {
+      background-color: #4b1d60;
+      color: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      flex: 1 1 300px;
+      max-width: 350px;
+    }
+    
+    .user {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    
+    .user img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      margin-right: 12px;
+    }
+    
+    .verified {
+      font-size: 14px;
+      color: #e0b0ff;
+    }
+    
+    .card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    
+    /* Responsive Layout */
+    @media (max-width: 768px) {
+      .top-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+      }
+    
+      .left-text h1 {
+        font-size: 2rem;
+      }
+    
+      .right-ratings {
+        align-self: stretch;
+      }
+    
+      .card-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .card {
+        max-width: 100%;
+      }
+    }

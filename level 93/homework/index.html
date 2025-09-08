@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eval, isNaN, parseInt, parseFloat</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2rem; }
+        h1 { margin-bottom: 1rem; }
+        h2 { margin-top: 2rem; }
+        .btns { display: grid; gap: .5rem; max-width: 520px; }
+        button { padding: .5rem .75rem; cursor: pointer; }
+        #output { margin-top: 2rem; padding: 1rem; background: rgb(244,244,244); border-radius: 6px; }
+        .note { color: #666; font-size: .9rem; }
+    </style>
+</head>
+<body>
+    <h1>Interactive Tasks</h1>
+
+    <h2>1-5) eval()</h2>
+    <div class="btns">
+        <button id="t1">Enter math expression (e.g., 5+3)</button>
+        <button id="t2">Expression with parentheses (e.g., (8+2)*3)</button>
+        <button id="t3">Division (e.g., 100/4)</button>
+        <button id="t4">Square a number using eval("num*num")</button>
+        <button id="t5">Store expression in variable and eval it</button>
+        <div class="note">Note: Using eval() only for learning purposes here.</div>
+    </div>
+
+    <h2>7-11) isNaN()</h2>
+    <div class="btns">
+        <button id="t6">Is input a number?</button>
+        <button id="t7">Validate age with isNaN()</button>
+        <button id="t8">Check two values with isNaN()</button>
+        <button id="t9">Detect number vs text</button>
+        <button id="t10">Calculator with validation (+, -, *, /)</button>
+    </div>
+
+    <h2>12-16) parseInt()</h2>
+    <div class="btns">
+        <button id="t11">Convert whole number string</button>
+        <button id="t12">Add two whole number strings</button>
+        <button id="t13">Parse "55px"</button>
+        <button id="t14">Add parseInt("20px") + parseInt("15.9")</button>
+        <button id="t15">Parse hexadecimal "0xF"</button>
+    </div>
+
+    <h2>17-21) parseFloat()</h2>
+    <div class="btns">
+        <button id="t16">Sum item prices as strings (e.g., 19.99 and 5.50)</button>
+        <button id="t17">Bill and tip (amount, percent)</button>
+        <button id="t18">Celsius to Fahrenheit</button>
+        <button id="t19">BMI from weight (kg) and height (m)</button>
+        <button id="t20">Fuel efficiency: km per liter</button>
+    </div>
+
+    <div id="output"><strong>Results will appear here…</strong></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

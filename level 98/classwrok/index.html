@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Length Checker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>String Length Checker</h1>
+        <p style="text-align: center; color: #666; margin-bottom: 30px;">
+            Check if any string in an array of 10 strings has more than 10 characters
+        </p>
+        
+        <div class="result">
+            <h3>Task: Check Array for Long Strings</h3>
+            <p>Given an array of 10 strings, determine if any string has more than 10 characters.</p>
+            <button onclick="checkPredefinedArray()">Check Predefined Array</button>
+            <button onclick="generateRandomArray()">Generate Random Array</button>
+            <div id="arrayResult"></div>
+        </div>
+
+        <div class="result">
+            <h3>Custom Array Input</h3>
+            <p>Enter 10 strings (one per line) to check:</p>
+            <div class="input-group">
+                <label for="customArray">Enter 10 strings (one per line):</label>
+                <textarea id="customArray" rows="10" cols="50" placeholder="Enter 10 strings, one per line..."></textarea>
+            </div>
+            <button onclick="checkCustomArray()">Check Custom Array</button>
+            <div id="customResult"></div>
+        </div>
+
+        <div class="result">
+            <h3>Multiple Test Cases</h3>
+            <button onclick="runAllTests()">Run All Test Cases</button>
+            <div id="allTestsResult"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
