@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Random String</title>
+  </head>
+  <body>
+    <p id="output">დააჭირე ღილაკს რომ ნახო ტექსტი</p>
+    <button id="show">გამოაჩინე შემთხვევითი ტექსტი</button>
+
+    <script>
+      const paragraph = document.getElementById('output');
+      const button = document.getElementById('show');
+
+      const texts = ['გამარჯობა', 'საღამო მშვიდობისა', 'კარგ დღეს გისურვებთ', 'წარმატებები!', 'ჰეი იქ!'];
+
+      button.addEventListener('click', () => {
+        const randomIndex = Math.floor(Math.random() * texts.length);
+        paragraph.textContent = texts[randomIndex];
+      });
+    </script>
+  </body>
+</html>

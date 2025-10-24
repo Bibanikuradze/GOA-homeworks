@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ka">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Today's Weekday</title>
+    </head>
+    <body>
+        <p id="output">დააჭირე ღილაკს რომ ნახო დღევანდელი დღე</p>
+        <button id="show">გამოაჩინე დღევანდელი დღე</button>
+
+        <script>
+        const paragraph = document.getElementById('output');
+        const button = document.getElementById('show');
+
+        const weekdays = [
+            'კვირა',
+            'ორშაბათი',
+            'სამშაბათი',
+            'ოთხშაბათი',
+            'ხუთშაბათი',
+            'პარასკევი',
+            'შაბათი'
+        ];
+
+        button.addEventListener('click', () => {
+            const todayIndex = new Date().getDay();
+            paragraph.textContent = weekdays[todayIndex];
+        });
+        </script>
+    </body>
+</html>

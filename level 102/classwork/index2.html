@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ka">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>document</title>
+    <style>
+        body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; padding: 24px; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 4px; }
+    </style>
+    <script>
+        (function () {
+            function pad(number) {
+                return String(number).padStart(2, '0');
+            }
+
+            function formatNow(date) {
+                const year = date.getFullYear();
+                const month = pad(date.getMonth() + 1);
+                const day = pad(date.getDate());
+                const hours = pad(date.getHours());
+                const minutes = pad(date.getMinutes());
+                const seconds = pad(date.getSeconds());
+                return `${year}-${month}-${day}, ${hours}-${minutes}-${seconds}`;
+            }
+
+            window.startInterval = function startInterval() {
+                const startMs = Date.now();
+                const intervalId = setInterval(function () {
+                    const now = new Date();
+                    console.log(formatNow(now));
+
+                    if (Date.now() - startMs >= 60000) {
+                        clearInterval(intervalId);
+                        console.log('ინტერვალი დასრულდა.');
+                    }
+                }, 1000);
+            };
+        })();
+    </script>
+</head>
+<body>
+    <h1>საკლასო დავალება</h1>
+    <p>
+        დააჭირე ღილაკს დაწყებისთვის. თითოეულ წამზე 1 წუთის განმავლობაში,
+        დრო გამოჩნდება დეველოპერის კონსოლში.
+    </p>
+    <p>
+        ფორმატი: <code>წელი-თვე-დღე, საათი-წუთი-წამი</code>
+    </p>
+    <button onclick="startInterval()">დაწყება</button>
+    <p>
+        კონსოლის გასახსნელად გამოიყენე: Ctrl+Shift+I ან F12 → Console
+    </p>
+</body>
+</html>
+
